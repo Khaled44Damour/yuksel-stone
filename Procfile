@@ -1,0 +1,1 @@
+web: gunicorn yuksel_site.wsgi:application
