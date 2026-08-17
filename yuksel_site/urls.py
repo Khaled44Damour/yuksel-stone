@@ -8,6 +8,6 @@ urlpatterns = [
     path('', include('products.urls')),
 ]
 
-# قم بإضافة هذين السطرين مباشرة هنا بدون شرط الـ DEBUG للتأكد من عملهما على السيرفر:
+
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
